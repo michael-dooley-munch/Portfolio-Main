@@ -24,19 +24,25 @@
             <h1>My Illustrations</h1>
             <div class="gallery-grid">
                 <div class="gallery-item">
-                    <img src="images/gas mask skch.png" alt="Image 1" class="clickable-image">
+                    <img src="images/gas mask skch.png" alt="Image 1" class="clickable-image" data-description="Practice sketch of charater" >
                 </div>
                 <div class="gallery-item">
-                    <img src="images/gas mask.png" alt="Image 2" class="clickable-image">
+                    <img src="images/gas mask.png" alt="Image 2" class="clickable-image" data-description="Finished illustration of character practice" >
                 </div>
                 <div class="gallery-item">
-                    <img src="images/gurren lagann banner.png" alt="Image 3" class="clickable-image">
+                    <img src="images/gurren lagann banner.png" alt="Image 3" class="clickable-image" data-description="Illustrated banner based on the anime Gurren Lagann" >
                 </div>
                 <div class="gallery-item">
-                    <img src="images/knight.png" alt="Image 4" class="clickable-image">
+                    <img src="images/knight.png" alt="Image 4" class="clickable-image" data-description="Character sketch created during character design webinar, hosted by the comic book artist Crom" >
                 </div>
                 <div class="gallery-item">
-                    <img src="images/pfp.png" alt="Image 5" class="clickable-image">
+                    <img src="images/pfp.png" alt="Image 5" class="clickable-image" data-description="Profile picture for my social media accounts" >
+                </div>
+                <div class="gallery-item">
+                    <img src="images/main guy body.png" alt="Main Guy Body" class="clickable-image" data-description="Human character turn around for unnamed project" >
+                </div>
+                <div class="gallery-item">
+                    <img src="images/oger.png" alt="Oger" class="clickable-image" data-description="Oger character turn around for unnamed project" >
                 </div>
             </div>
     </section>
@@ -64,6 +70,7 @@
     <div id="imageModal" class="modal">
         <span class="modal-close">&times;</span>
         <img class="modal-image" id="modalImage" src="" alt="">
+        <p id="modalCaption" class="modal-caption"></p>
     </div>
 
     <script>
@@ -79,6 +86,9 @@
                 modal.classList.add('show');
                 modalImage.src = this.src;
                 modalImage.alt = this.alt;
+                // set caption from data-description attribute (can be empty)
+                const caption = document.getElementById('modalCaption');
+                caption.textContent = this.dataset.description || '';
             });
         });
 
