@@ -35,6 +35,14 @@
                 <div class="gallery-item">
                     <a href="https://youtu.be/qUlMOGqwW4Q?si=EXzJLmaBUMF4r7Fk"><img src="images/RSETN.png" alt="Image 4"></a>
                 </div>
+                 <div class="gallery-item">
+                    <a href=" https://youtu.be/Sti6p7YGmgA?si=p35bsFsB5J4s32TC "><img src="images/Animatic thumbnail.png" alt="Image 4"></a>
+                </div>
+                 <div class="gallery-item">
+                    <a href=" https://youtu.be/7UDc24a5m5g "><img src="images/Grunts animatic.png" alt="Image 4"></a>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/story board MIS.png" alt="Image 1" class="clickable-image" data-description="Story board for small class project">
             </div>
     </section>
 
@@ -57,7 +65,50 @@
 </div>
     </footer>
 
+    <!-- Image Modal -->
+    <div id="imageModal" class="modal">
+        <span class="modal-close">&times;</span>
+        <img class="modal-image" id="modalImage" src="" alt="">
+        <p id="modalCaption" class="modal-caption"></p>
+    </div>
+
+    <script>
+        // Get modal elements
+        const modal = document.getElementById('imageModal');
+        const modalImage = document.getElementById('modalImage');
+        const closeBtn = document.querySelector('.modal-close');
+        const clickableImages = document.querySelectorAll('.clickable-image');
+
+        // Open modal when image is clicked
+        clickableImages.forEach(img => {
+            img.addEventListener('click', function() {
+                modal.classList.add('show');
+                modalImage.src = this.src;
+                modalImage.alt = this.alt;
+                const caption = document.getElementById('modalCaption');
+                caption.textContent = this.dataset.description || '';
+            });
+        });
+
+        // Close modal when X is clicked
+        closeBtn.addEventListener('click', function() {
+            modal.classList.remove('show');
+        });
+
+        // Close modal when clicking outside the image
+        modal.addEventListener('click', function(event) {
+            if (event.target === modal) {
+                modal.classList.remove('show');
+            }
+        });
+
+        // Close modal with Escape key
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape') {
+                modal.classList.remove('show');
+            }
+        });
+    </script>
 
 </body>
 </html>
-
