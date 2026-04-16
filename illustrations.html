@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Animations | Michael Dooley</title>
+    <title>Illustrations | Michael Dooley</title>
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -19,30 +19,36 @@
         </div>
     </nav>
 
-    <!-- Animations Section -->
+    <!-- Illustrations Section -->
     <section class="work-page">
-            <h1>My Animations</h1>
+            <h1>My Illustrations</h1>
             <div class="gallery-grid">
                 <div class="gallery-item">
-                    <a href=https://youtu.be/napGqWZk0IQ?si=jkoosncWftieaXGM><img src="images/fire thing thumbnail.png" alt="Image 1"></a>
+                    <img src="images/gas mask skch.png" alt="Image 1" class="clickable-image" data-description="Practice sketch of charater" >
                 </div>
                 <div class="gallery-item">
-                    <a href="https://youtu.be/RoKKOUsh2Vw?si=76xnlZumJCWpufGc"><img src="images/flame-icon-small.png" alt="Image 2"></a>
+                    <img src="images/gas mask.png" alt="Image 2" class="clickable-image" data-description="Finished illustration of character practice" >
                 </div>
                 <div class="gallery-item">
-                    <a href="https://youtu.be/IZ7ul8wmu90?si=ytLnfJirHtoi0XMQ"><img src="images/fighting demo thumbnail.png" alt="Image 3"></a>
+                    <img src="images/gurren lagann banner.png" alt="Image 3" class="clickable-image" data-description="Illustrated banner based on the anime Gurren Lagann" >
                 </div>
                 <div class="gallery-item">
-                    <a href="https://youtu.be/qUlMOGqwW4Q?si=EXzJLmaBUMF4r7Fk"><img src="images/RSETN.png" alt="Image 4"></a>
-                </div>
-                 <div class="gallery-item">
-                    <a href=" https://youtu.be/Sti6p7YGmgA?si=p35bsFsB5J4s32TC "><img src="images/Animatic thumbnail.png" alt="Image 4"></a>
-                </div>
-                 <div class="gallery-item">
-                    <a href=" https://youtu.be/7UDc24a5m5g "><img src="images/Grunts animatic.png" alt="Image 4"></a>
+                    <img src="images/knight.png" alt="Image 4" class="clickable-image" data-description="Character sketch created during character design webinar, hosted by the comic book artist Crom" >
                 </div>
                 <div class="gallery-item">
-                    <img src="images/story board MIS.png" alt="Image 1" class="clickable-image" data-description="Story board for small class project">
+                    <img src="images/pfp.png" alt="Image 5" class="clickable-image" data-description="Profile picture for my social media accounts" >
+                </div>
+                <div class="gallery-item">
+                    <img src="images/main guy body.png" alt="Main Guy Body" class="clickable-image" data-description="Human character turn around for unnamed project" >
+                </div>
+                <div class="gallery-item">
+                    <img src="images/oger.png" alt="Oger" class="clickable-image" data-description="Oger character turn around for unnamed project" >
+                </div>
+                <div class="gallery-item">
+                    <img src="images/Lamp post prop.png" alt="Lamp Post Prop" class="clickable-image" data-description="Lamp post prop for unnamed project" >
+                </div>
+                <div class="gallery-item">
+                    <img src="images/PTB MG.png" alt="PTB MG" class="clickable-image" data-description="this is a concept art piece for a video game concept paired with art style experimentation" >
             </div>
     </section>
 
@@ -85,6 +91,7 @@
                 modal.classList.add('show');
                 modalImage.src = this.src;
                 modalImage.alt = this.alt;
+                // set caption from data-description attribute (can be empty)
                 const caption = document.getElementById('modalCaption');
                 caption.textContent = this.dataset.description || '';
             });
@@ -109,6 +116,5 @@
             }
         });
     </script>
-
 </body>
 </html>
