@@ -178,24 +178,24 @@ nav {
   text-align: left;
 }
 
-.art img{
-  top: 100%;
-  right: 10%;
-  width: 450px;        /* Reduced from 500px */
-  height: auto;       /* Added to maintain square aspect */
-  max-width: 90%;
-  object-fit: cover;   /* Added to ensure image fills circle properly */
-  z-index: 1;
+.art {
+  position: relative;
+  flex: 1 1 400px;
+  min-width: 280px;
+  max-width: 560px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
 }
 
 .art iframe {
-  position: absolute;
-  top: 700px;
-  right: 10%;
-  width: 450px;
-  height: 450px;
-  max-width: 90%;
-  z-index: 1;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  max-height: 360px;
+  border: none;
+  border-radius: 18px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
 }
 
 /* ===================== WORK PAGE ===================== */
@@ -439,10 +439,9 @@ nav {
     margin-top: -40px;
   }
 
-  /* owl */
-  .art img {
-    margin-left: auto;
-    margin-right: auto;
+  .about-icon img {
+    width: 100%;
+    height: auto;
     display: block;
   }
 
@@ -866,6 +865,7 @@ nav {
 
 .profile-img {
     width: 260px;
+    max-width: 100%;
     height: auto;
     border-radius: 12px;
     margin-bottom: 20px;
