@@ -188,6 +188,16 @@ nav {
   z-index: 1;
 }
 
+.art iframe {
+  position: absolute;
+  top: 700px;
+  right: 10%;
+  width: 450px;
+  height: 450px;
+  max-width: 90%;
+  z-index: 1;
+}
+
 /* ===================== WORK PAGE ===================== */
 .work-page {
     background-color: #c9aaee; /* light purple */
