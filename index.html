@@ -6,7 +6,7 @@
     <title>Michael Dooley | Ink.munch</title>
     <link rel="stylesheet" href="style.css" />
 </head>
-<body>
+<body class="home-page">
     <!-- Navigation -->
     <nav>
   <a href="index.html" class="nav-home-link" aria-label="Home">
@@ -19,53 +19,98 @@
   </div>
 </nav>
   
-  <!-- Header -->
-  <header class="header">
-    <h1>Michael Dooley <span>@Ink.munch</span></h1>
-    <p class="tagline">Where ideas grow teeth and smile back</p>
-    <img src="images/pfp.png" alt="Profile Artwork" class="hero-img" />
+  <div class="home-shell">
+    <header class="header hero">
+    <div class="hero-copy">
+      <p class="eyebrow">Artist • Storyteller • Creative</p>
+      <h1>Michael Dooley</h1>
+      <p class="subtitle">Animator • Illustrator • Tattoo Artist</p>
+      <p class="intro">
+        I create expressive motion, bold illustration, and tattoo concepts that bring stories,
+        identities, and ideas to life with character and clarity.
+      </p>
+      <div class="hero-actions">
+        <a href="work.html" class="button button-primary">View Portfolio</a>
+        <a href="about.html" class="button button-secondary">About Me</a>
+      </div>
+      <div class="showreel-wrap">
+        <iframe
+          src="https://www.youtube.com/embed/Wt2ht2nEDac?si=df4A_5S4PlDvKpQ7"
+          title="Michael Dooley showreel"
+          loading="lazy"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <img src="images/pfp.png" alt="Michael Dooley profile artwork" class="hero-img" />
+    </div>
   </header>
 
-  <!-- My Work Section -->
-  <section class="work">
-    <div class="content">
-      <h2>MY WORK:<br><span>ANIMATIONS AND INK</span></h2>
-      <p>
-        Fluid, detailed and stylised are the three words I use too much to describe my own work.
-        From animations to tattoo designs my work is diverse with continuously showing life like imagery.
-        Currently having no formal education all my work is personal and unpaid as a way of sharpening skills
-        and raising myself to an industry standard. Following below will take you to the gallery section to
-        view all of my creative works and progression.
-      </p>
-      <a href="work.html" class="button">View more work ></a>
-    </div>
-    <div class="art">
-      <iframe src="https://www.youtube.com/embed/Wt2ht2nEDac" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    </div>
-  </section>
+  <main class="site-main">
+    <section class="featured-work" aria-labelledby="featured-work-title">
+      <div class="section-heading">
+        <p class="kicker">Featured work</p>
+        <h2 id="featured-work-title">Creative direction across motion, illustration, and ink.</h2>
+      </div>
 
-  <!-- About Section -->
-  <section class="about">
-    <div class="content">
-      <h2>ABOUT MICHAEL DOOLEY:<br><span>The man the myth the used-pharma student</span></h2>
-      <p>
-        Hello! My name is Michael Dooley. I'm based in Cork and I'm an amateur animator with hopes of pursuing
-        professional work in the future. In my personal projects, I prioritise fluid and well-thought-out movement.
-        I'm self-taught on Clip Studio Paint, and my work is constantly improving. With a promising new educational
-        opportunity just around the corner, I expect my potential skill set and existing abilities to grow and
-        sharpen dramatically.
-      </p>
-      <p>
-        If you’d like to read more about me, my recent past, education, and inspirations, please follow the prompt below.
-      </p>
-      <a href="about.html" class="button">Read more ></a>
-    </div>
-    <div class="about-icon">
-      <img src="images/owl-art.png" alt="About Icon Illustration" class="about-icon" />
-  </section>
+      <div class="feature-grid">
+        <article class="feature-card">
+          <button type="button" class="feature-link feature-preview-trigger" data-full="images/Blaidd%202.png" data-title="Blaidd">
+            <img src="images/Blaidd%202.png" alt="Blaidd illustration" />
+            <div class="feature-copy">
+              <h3>Blaidd</h3>
+            </div>
+          </button>
+        </article>
+
+        <article class="feature-card">
+          <button type="button" class="feature-link feature-preview-trigger" data-full="images/Parkour_Kyd.png" data-title="Parkour Kyd">
+            <img src="images/Parkour_Kyd.png" alt="Parkour Kyd artwork" />
+            <div class="feature-copy">
+              <h3>Parkour Kyd</h3>
+            </div>
+          </button>
+        </article>
+
+        <article class="feature-card">
+          <button type="button" class="feature-link feature-preview-trigger" data-full="images/Cal%20Sk8%201.png" data-title="Cal Sk8">
+            <img src="images/Cal%20Sk8%201.png" alt="Cal Sk8 artwork" />
+            <div class="feature-copy">
+              <h3>Cal Sk8</h3>
+            </div>
+          </button>
+        </article>
+
+        <article class="feature-card">
+          <button type="button" class="feature-link feature-preview-trigger" data-full="images/Owl%20tattoo%20combo.png" data-title="Owl Tattoo Combo">
+            <img src="images/Owl%20tattoo%20combo.png" alt="Owl tattoo combo" />
+            <div class="feature-copy">
+              <h3>Owl Tattoo Combo</h3>
+            </div>
+          </button>
+        </article>
+
+        <article class="feature-card">
+          <button type="button" class="feature-link feature-preview-trigger" data-full="images/chandelure%20tattoo.png" data-title="Chandelure Tattoo">
+            <img src="images/chandelure%20tattoo.png" alt="Chandelure tattoo design" />
+            <div class="feature-copy">
+              <h3>Chandelure Tattoo</h3>
+            </div>
+          </button>
+        </article>
+      </div>
+    </section>
+
+  </main>
 
   <footer class="footer">
-    <h1 class="footer-name">MICHAEL F. DOOLEY</h1>
+    <a href="https://drive.google.com/file/d/1_02noCAkxzicU-jmWHpQbnrkZweUB2yd/view?usp=sharing" target="_blank" class="footer-name-link">
+      <h1 class="footer-name">MICHAEL F. DOOLEY</h1>
+    </a>
     <hr class="footer-line">
     <p class="footer-email">Email: <a href="mailto:michaeldooley.munch@gmail.com">michaeldooley.munch@gmail.com</a></p>
     
@@ -81,6 +126,48 @@
     </a>
 </div>
   </footer>
+  </div>
+
+  <div id="previewModal" class="modal">
+    <span class="modal-close">&times;</span>
+    <div class="modal-content">
+      <img class="modal-image" id="previewModalImage" src="" alt="" />
+      <p id="previewModalTitle" class="modal-caption"></p>
+    </div>
+  </div>
+
+  <script>
+    const previewButtons = document.querySelectorAll('.feature-preview-trigger');
+    const previewModal = document.getElementById('previewModal');
+    const previewModalImage = document.getElementById('previewModalImage');
+    const previewModalTitle = document.getElementById('previewModalTitle');
+    const previewCloseBtn = previewModal.querySelector('.modal-close');
+
+    previewButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        previewModalImage.src = button.dataset.full;
+        previewModalImage.alt = button.dataset.title;
+        previewModalTitle.textContent = button.dataset.title;
+        previewModal.classList.add('show');
+      });
+    });
+
+    const closePreviewModal = () => previewModal.classList.remove('show');
+
+    previewCloseBtn.addEventListener('click', closePreviewModal);
+
+    previewModal.addEventListener('click', (event) => {
+      if (event.target === previewModal) {
+        closePreviewModal();
+      }
+    });
+
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape') {
+        closePreviewModal();
+      }
+    });
+  </script>
   
 </body>
 </html>
